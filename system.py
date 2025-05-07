@@ -133,7 +133,7 @@ def transaction_history():
         print("Please log in first.")
         return
 
-    print("Transaction History:")
+    print("Transaction:")
     with open("transaction.txt", "r") as t:
         for line in t:
             account_number, transaction_type, amount = line.strip().split(", ")
